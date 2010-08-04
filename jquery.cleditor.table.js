@@ -14,7 +14,7 @@
 
 (function($) {
 
-  // ● Define the table button
+  // Define the table button
   $.cleditor.buttons.table = {
     name: "table",
     image: "table.gif",
@@ -30,11 +30,11 @@
     buttonClick: tableButtonClick
   };
 
-  // ● Add the button to the default controls
+  // Add the button to the default controls
   $.cleditor.defaultOptions.controls = $.cleditor.defaultOptions.controls
     .replace("rule ", "rule table ");
         
-  // ● Table button click event handler
+  // Table button click event handler
   function tableButtonClick(e, data) {
 
     // Wire up the submit button click event handler
@@ -63,7 +63,7 @@
               html += "<td>" + x + "," + y + "</td>";
             html += "</tr>";
           }
-          html += "</table>";
+          html += "</table><br />";
         }
 
         // Insert the html
