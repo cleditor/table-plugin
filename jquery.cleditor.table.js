@@ -1,7 +1,7 @@
 ﻿/**
- @preserve CLEditor Table Plugin v1.0
+ @preserve CLEditor Table Plugin v1.0.2
  http://premiumsoftware.net/cleditor
- requires CLEditor v1.2 or later
+ requires CLEditor v1.2.2 or later
  
  Copyright 2010, Chris Landowski, Premium Software, LLC
  Dual licensed under the MIT or GPL Version 2 licenses.
@@ -44,9 +44,6 @@
 
         // Get the editor
         var editor = data.editor;
-
-        // Restore internet explorer selection
-        editor.restoreSelection();
 
         // Get the column and row count
         var $text = $(data.popup).find(":text"),
